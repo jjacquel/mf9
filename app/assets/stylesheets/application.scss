@@ -30,7 +30,7 @@ a {
   position: relative;
   background: #eee;
   text-align: center;
-  padding: 0 2em;
+  // padding: 0 2em;
   h1 {
     font-size: 2rem;
     margin: 0;
@@ -97,4 +97,11 @@ a {
   .et-hero-tab {
     font-size: 1rem;
   }
+}
+
+.et-hero-tabs {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  overflow: hidden;
 }

@@ -13,6 +13,9 @@
     // width: 50%;
     margin-left: 35px;
   }
+  .banner-right {
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -29,6 +32,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .box {
@@ -43,13 +47,16 @@
   .product {
     width: 200px;
   }
+
+  .logo {
+    width: 64px;
+  }
 }
 
 .banner-right {
   background-color: #0c1f3f;
   overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: left;
 }
 

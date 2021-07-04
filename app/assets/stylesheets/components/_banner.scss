@@ -16,6 +16,13 @@
   .banner-right {
     padding-top: 40px;
   }
+  .image-2 {
+    background-image: url("why-mf9.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 220vh;
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: 991px) {
@@ -25,6 +32,15 @@
     background-position: center;
     width: 110vw;
     height: 50vh;
+    opacity: 0.8;
+  }
+
+  .image-2 {
+    background-image: url("why-mf9.jpg");
+    background-size: cover;
+    background-position: center;
+    // width: 110vw;
+    height: 35vh;
     opacity: 0.8;
   }
 
@@ -67,11 +83,11 @@
 //   text-align: center;
 // }
 
-.transparent {
-  background-color: rgba(250, 250, 250, 0.7);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+// .transparent {
+//   background-color: rgba(250, 250, 250, 0.7);
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }

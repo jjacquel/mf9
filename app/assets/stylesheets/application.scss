@@ -24,8 +24,8 @@ a {
 .et-slide {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
   height: 100vh;
   position: relative;
   background: #eee;
@@ -104,4 +104,16 @@ a {
   padding: 0px;
   height: 100%;
   overflow: hidden;
+}
+
+.et-main {
+  // width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.et-slide {
+  // width: 100%;
+  margin: 0px;
+  padding: 0px;
 }

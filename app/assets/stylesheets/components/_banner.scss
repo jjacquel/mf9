@@ -23,6 +23,11 @@
     width: 220vh;
     opacity: 0.8;
   }
+
+  .box-3 {
+    width: 50%;
+    margin-right: 80px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -67,6 +72,19 @@
   .logo {
     width: 64px;
   }
+
+  .transparent {
+    flex-direction: column;
+  }
+
+  .box-3 {
+    flex-grow: 1;
+  }
+
+  .tri-factor {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .banner-right {
@@ -76,6 +94,14 @@
   justify-content: left;
 }
 
+.image-3 {
+  background-image: url("switzerland.jpg");
+  background-size: cover;
+  background-position: center;
+  // width: 110vw;
+  // opacity: 0.4;
+}
+
 // .box {
 //   // margin-left: 40px;
 //   margin-top: 70px;
@@ -83,11 +109,25 @@
 //   text-align: center;
 // }
 
-// .transparent {
-//   background-color: rgba(250, 250, 250, 0.7);
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
+.transparent {
+  background-color: rgba(250, 250, 250, 0.7);
+  height: 100%;
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-3 {
+  background-color: white;
+  text-align: left;
+  // margin-left: 24px;
+  // margin-right: 24px;
+  padding: 24px;
+  opacity: 0.9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.tri-factor {
+  height: 40vh;
+}

@@ -67,9 +67,12 @@ label.nav {
   grid-column-start: 1;
   grid-row-start: 2;
   grid-column-end: span 3;
-  padding: 0px 20px;
-  display: flex;
-  align-items: center;
+  padding: 0px 30px;
+  // padding-left: 30px;
+  // padding-right: 30px;
+  // display: flex;
+  // width: 100%;
+  // align-items: center;
 }
 
 .page-contents > * {

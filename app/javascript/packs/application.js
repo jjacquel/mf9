@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
@@ -115,3 +117,27 @@ class StickyNavigation {
 }
 
 new StickyNavigation();
+
+function _class(name) {
+  return document.getElementsByClassName(name);
+}
+
+let tabPanes = _class("tab-header")[0].getElementsByTagName("div");
+
+for (let i = 0; i < tabPanes.length; i++) {
+  tabPanes[i].addEventListener("click", function () {
+    _class("tab-header")[0]
+      .getElementsByClassName("active")[0]
+      .classList.remove("active");
+    tabPanes[i].classList.add("active");
+
+    _class("tab-indicator")[0].style.top = `calc(80px + ${i * 50}px)`;
+
+    _class("tab-content")[0]
+      .getElementsByClassName("active")[0]
+      .classList.remove("active");
+    _class("tab-content")[0]
+      .getElementsByTagName("div")
+      [i].classList.add("active");
+  });
+}

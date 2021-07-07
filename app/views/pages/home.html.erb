@@ -110,13 +110,13 @@
         <div class="image-3" style="height: 88vh; width: 100%; overflow: hidden;">
 
           <div class="transparent">
-            <div class="col-lg-5 col-sm-12 mx-0 px-0" style="display: flex; align-items: center; justify-content: center; opacity: 1;">
+            <div class="col-lg-5 mx-0 px-0" style="display: flex; align-items: center; justify-content: center; opacity: 1;">
                <%= image_tag("tri_factor.png", alt: "Tri Factor", class:"tri-factor", style:"height: 30vh;") %>
             </div>
-            <div class="col-lg-7 col-sm-12 box-3">
+            <div class="col-lg-7 box-3">
            <!--    <div class="box-3"> -->
-                <h3>MF9 is a brand by MF3 that is used exclusively for the Indonesian market. All products under the brand MF9, are the same products as those of MF3.</h3>
-                <p> MF3 began its proud history as MF3 of Switzerland, the brand that carries pioneering Softgels supplements made from animal and plant placenta extracts. </p>
+                <h3 style="font-size: 16px; margin-bottom: 30px;">MF9 is a brand by MF3 that is used exclusively for the Indonesian market. All products under the brand MF9, are the same products as those of MF3.</h3>
+                <p style="margin-bottom: 20px;"> MF3 began its proud history as MF3 of Switzerland, the brand that carries pioneering Softgels supplements made from animal and plant placenta extracts. </p>
                 <p> MF3's revolutionary PE and VP Softgels Advanced Formula supplements became the forerunner of placenta supplements in the market and captured worldwide fans for their superior quality and proven results. </p>
             <!--   </div> -->
             </div>
@@ -175,27 +175,29 @@
 
       <div class="layout">
         <input name="nav" type="radio" class="nav home-radio" id="home" checked="checked">
-        <div class="page home-page">
+        <div class="page home-page" style="overflow-x:clip; justify-content:center;">
           <div class="page-contents mx-0">
             <!-- <div class="row">
               <h1 style="font: 32px; margin-bottom: 16px;">Enhanced Sheep Placenta Extracts </h1>
               <p>Daily Nutritional Supplement with enhanced formulation of Sheep Placenta Extracts, Premium Fish DNA Cellular Extract and Ubiquinol for total rejuvenation, intensive cellular renewal and complete wellness.</p>
             </div> -->
             <div class="row" style="width: 100vw; margin-left: 0px; padding-left: 0px;">
-              <div class="col-lg-5 col-sm-12 mx-0 px-0" style="display: flex; flex-direction: column; opacity: 1;">
-                <div class="box-p", style="width: 100%; padding-top: 20px; text-align: left;">
+              <div class="col-lg-5 col-sm-12 mx-0 px-0 box-p" style="opacity: 1; display:flex; padding-top: 10px; padding-left: 30px; padding-right: 30px;">
+                <div class="product-content", style="width: 100%; padding-top: 20px; text-align: left;">
+                  <!-- <div class="", style="width: 100%; padding-top: 20px; text-align: left;"> -->
                   <h1 style="font: 32px; margin-bottom: 16px; width: 100%;">Enhanced Sheep Placenta Extracts </h1>
                   <p style="width: 100%;">Daily Nutritional Supplement with enhanced formulation of Sheep Placenta Extracts, Premium Fish DNA Cellular Extract and Ubiquinol for total rejuvenation, intensive cellular renewal and complete wellness.</p>
                 </div>
-                <div class="box-p">
+                <div class="" style="display:flex; align-items:center;">
                   <%= image_tag("mf9-pe.png", class:"pe", alt: "PE Evolution") %>
                 </div>
               </div>
               <div class="col-lg-7 col-sm-12" style="text-align: left;">
 
-                <div class="tabs box-p d-none d-sm-block">
-                  <h2 style="margin-top: 0px;">Ingredients:</h2>
+                <div class="tabs d-none d-sm-block" style="padding-left: 20px; padding-right: 20px;">
+                 <!--  <h2 style="margin-top: 0px;">Ingredients:</h2> -->
                   <div class="tab-header">
+                    <!-- <h2 style="margin-top: 0px;">Rebuild, Rejuvenate, Renew</h2> -->
                     <div class="active">
                       <!-- <i class="fa fa-code"></i>  -->
                       <span style="font: 16px;">Sheep Placenta Extracts</span>
@@ -208,35 +210,60 @@
                       <!-- <i class="fa fa-bar-chart"></i>  -->
                       Ubiquinol
                     </div>
-   <!--                  <div>
-                      <i class="fa fa-envelope"></i> Contact
-                    </div> -->
+                    <div>
+                      <!-- <i class="fa fa-envelope"></i>  -->
+                      Benefits
+                    </div>
                   </div>
                   <div class="tab-indicator"></div>
                   <div class="tab-content">
 
                     <div class="active">
-                      <i class="fa fa-code"></i>
-                      <h2>This is code section</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+                      <!-- <i class="fa fa-code"></i> -->
+                      <%= image_tag("sheep-placenta.png", class:"ingredient", alt: "sheep placenta") %>
+                      <h2>Sheep Placenta Extract</h2>
+                      <p>Contains concentrated bioactive nutrients such as amino acids, melatonin, nucleic acids, hyaluronic acid, antioxidants, immune cofactors, peptides, growth factors and other essential nutrients.</p>
                     </div>
 
                     <div>
-                      <i class="fa fa-pencil-square"></i>
-                      <h2>This is about section</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+                      <!-- <i class="fa fa-pencil-square"></i> -->
+                      <%= image_tag("fish-dna.png", class:"ingredient", alt: "fish-dna") %>
+                      <h2>Fish DNA Cellular Extract</h2>
+                      <p>Contains antioxidants, antimicrobial, photo protective, and anti-photoaging activities. Helps to improve physical performance, support musculoskeletal health, stimulate immune system and the production of healthy collagen and elastin in skin.</p>
                     </div>
 
                     <div>
-                      <i class="fa fa-bar-chart"></i>
-                      <h2>This is services section</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+                      <!-- <i class="fa fa-bar-chart"></i> -->
+                      <%= image_tag("ubiquinol.png", class:"ingredient", alt: "ubiquinol") %>
+                      <h2>Ubiquinol</h2>
+                      <p>The most advanced form of Coenzyme Q10 (CoQ10), and is an active antioxidant in the most bio-absorbable form and has antioxidant functions.</p>
                     </div>
 
                     <div>
-                      <i class="fa fa-envelope"></i>
-                      <h2>This is contact section</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+
+                      <h2 style="margin-bottom: 30px;">Benefits</h2>
+                      <p style="border: solid 1px;">Celllular repair</p>
+                      <p>Boost energy and stamins</p>
+                      <p style="border: solid 1px;">Joints and bones healing</p>
+                      <p>Healthy skin, hair and nails</p>
+                      <p style="border: solid 1px;">Healthy aging</p>
+                      <p>Overall Well</p>
+                      <!-- <i class="fa fa-envelope"></i> -->
+<!--                       <h2>Benefits </h2>
+                        <p style="border: 1px;">Cellular repair</p>
+                        <p>Boost energy and stamins</p>
+                        <p>Joints and bones healing</p>
+                        <p>Healthy skin, hair and nails</p>
+                        <p>Healthy aging</p>
+                        <p>Overall Well</p> -->
+                 <!--      <ul style="text-align: left; list-style: none;">
+                        <li>Cellular repair</li>
+                        <li>Boost energy and stamins</li>
+                        <li>Joints and bones healing</li>
+                        <li>Healthy skin, hair and nails</li>
+                        <li>Healthy aging</li>
+                        <li>Overall Well</li>
+                      </ul> -->
                     </div>
 
                   </div>

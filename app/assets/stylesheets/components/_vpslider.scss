@@ -1,0 +1,174 @@
+.wabs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 400px;
+  /* padding: 20px 20px; */
+  background: #f5f5f5;
+  box-shadow: 5px 5px 10px 5px #ccc;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  overflow-y: scroll;
+}
+
+.wabs .wab-header {
+  float: left;
+  // width: 180px;
+  width: 220px;
+  height: 100%;
+  border-right: 1px solid #ccc;
+  padding: 20px 0px;
+}
+.wabs .wab-header > div {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #888;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 22px;
+}
+
+.wabs .wab-header > div:hover,
+.wabs .wab-header > div.wactive {
+  color: #d2a836;
+}
+.wabs .wab-header div i {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.wabs .wab-content {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wabs .wab-content > div > i {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #555;
+  color: #f5f5f5;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+.wabs .wab-content > div {
+  position: absolute;
+  text-align: center;
+  // padding: 40px 20px;
+  padding-left: 20px;
+  // padding-right: 20px;
+  top: -200%;
+  transition: all 500ms ease-in-out;
+}
+.wabs .wab-content > div.wactive {
+  top: 0px;
+}
+
+.wabs .wab-indicator {
+  position: absolute;
+  width: 4px;
+  height: 50px;
+  background: #d2a836;
+  left: 237px;
+  top: 80px;
+  transition: all 500ms ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+  }
+
+  .page {
+    overflow: scroll;
+    // overflow-x: hidden;
+  }
+
+  .pe {
+    width: 300px;
+    height: auto;
+    padding-right: 30px;
+  }
+
+  .wabs {
+    position: absolute;
+    margin-top: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 300px;
+    padding: 20px 20px;
+    background: #f5f5f5;
+    box-shadow: 5px 5px 10px 5px #ccc;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    // margin-top: 160px;
+  }
+
+  .product-content {
+    padding-left: 30px;
+  }
+
+  .wabs .wab-header > div {
+    padding-top: 40px;
+  }
+
+  // .tabs .tab-indicator {
+  //   left: 247px;
+  // }
+}
+
+@media (min-width: 991px) {
+  .page {
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  .pe {
+    width: 100%;
+    height: auto;
+  }
+
+  .wactive {
+    margin-top: 20px;
+  }
+
+  .box-p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .tabs .tab-indicator {
+  //   left: 247px;
+  // }
+}
+
+.box-p {
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+}
+
+.ingredient {
+  width: 60px;
+}
+
+.wactive h2 {
+  font-size: 24px;
+}

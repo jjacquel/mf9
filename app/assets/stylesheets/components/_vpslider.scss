@@ -159,6 +159,19 @@
   // }
 }
 
+@media (max-width: 565px) {
+  .box-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .box-p {
   padding-right: 30px;
   padding-left: 30px;

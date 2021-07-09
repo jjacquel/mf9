@@ -141,3 +141,27 @@ for (let i = 0; i < tabPanes.length; i++) {
       [i].classList.add("active");
   });
 }
+
+// function _class(name){
+//   return document.getElementsByClassName(name);
+// }
+
+let wabPanes = _class("wab-header")[0].getElementsByTagName("div");
+
+for (let i = 0; i < wabPanes.length; i++) {
+  wabPanes[i].addEventListener("click", function () {
+    _class("wab-header")[0]
+      .getElementsByClassName("wactive")[0]
+      .classList.remove("wactive");
+    wabPanes[i].classList.add("wactive");
+
+    _class("wab-indicator")[0].style.top = `calc(80px + ${i * 50}px)`;
+
+    _class("wab-content")[0]
+      .getElementsByClassName("wactive")[0]
+      .classList.remove("wactive");
+    _class("wab-content")[0]
+      .getElementsByTagName("div")
+      [i].classList.add("wactive");
+  });
+}

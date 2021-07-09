@@ -1,4 +1,4 @@
-.tabs {
+.wabs {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15,7 +15,7 @@
   overflow-y: scroll;
 }
 
-.tabs .tab-header {
+.wabs .wab-header {
   float: left;
   // width: 180px;
   width: 220px;
@@ -23,7 +23,7 @@
   border-right: 1px solid #ccc;
   padding: 20px 0px;
 }
-.tabs .tab-header > div {
+.wabs .wab-header > div {
   height: 50px;
   line-height: 50px;
   font-size: 14px;
@@ -34,16 +34,16 @@
   padding-top: 22px;
 }
 
-.tabs .tab-header > div:hover,
-.tabs .tab-header > div.active {
+.wabs .wab-header > div:hover,
+.wabs .wab-header > div.wactive {
   color: #d2a836;
 }
-.tabs .tab-header div i {
+.wabs .wab-header div i {
   display: inline-block;
   margin-left: 10px;
   margin-right: 5px;
 }
-.tabs .tab-content {
+.wabs .wab-content {
   position: relative;
   height: 100%;
   overflow: hidden;
@@ -51,7 +51,7 @@
   align-items: center;
   justify-content: center;
 }
-.tabs .tab-content > div > i {
+.wabs .wab-content > div > i {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -63,7 +63,7 @@
   line-height: 50px;
   border-radius: 50%;
 }
-.tabs .tab-content > div {
+.wabs .wab-content > div {
   position: absolute;
   text-align: center;
   // padding: 40px 20px;
@@ -72,11 +72,11 @@
   top: -200%;
   transition: all 500ms ease-in-out;
 }
-.tabs .tab-content > div.active {
+.wabs .wab-content > div.wactive {
   top: 0px;
 }
 
-.tabs .tab-indicator {
+.wabs .wab-indicator {
   position: absolute;
   width: 4px;
   height: 50px;
@@ -104,7 +104,7 @@
     padding-right: 30px;
   }
 
-  .tabs {
+  .wabs {
     position: absolute;
     margin-top: 150px;
     top: 50%;
@@ -122,10 +122,9 @@
 
   .product-content {
     padding-left: 30px;
-    padding-right: 30px;
   }
 
-  .tabs .tab-header > div {
+  .wabs .wab-header > div {
     padding-top: 40px;
   }
 
@@ -146,7 +145,7 @@
     height: auto;
   }
 
-  .active {
+  .wactive {
     margin-top: 20px;
   }
 
@@ -160,9 +159,18 @@
   // }
 }
 
-// .active {
-//   overflow: scroll;
-// }
+@media (max-width: 565px) {
+  .box-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .box-p {
   padding-right: 30px;
@@ -174,6 +182,6 @@
   width: 60px;
 }
 
-.active h2 {
+.wactive h2 {
   font-size: 24px;
 }
